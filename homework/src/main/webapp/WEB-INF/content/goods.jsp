@@ -17,7 +17,7 @@
     <link href="css/style.css" rel="stylesheet">
   </head>
  <body>
-	<font color="#FF5809"><h1>欢迎商家[${sessionScope.manager.loginname }]来到饰品小屋！</h1></font>
+	<font color="#FF5809"><h1>欢迎商家${sessionScope.alogin.loginname }来到饰品小屋！</h1></font>
 	<font color="#FF5809"><h3>当前在线人数为：${applicationScope.count}人</h3></font>
 	<div>
 	<h1><a class="btn btn-primary" href="plusgoods" role="button">上架新商品</a>
