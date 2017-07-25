@@ -33,10 +33,7 @@ public class UserServiceImpl implements UserService {
 	public User login(String loginname, String password) {
 		return userMapper.findWithLoginnameAndPassword(loginname, password);
 	}
-	@Override
-	public int addUser(User user){
-		return userMapper.save(user);
-	}
+	
 	@Override
 	public int updateUser(User user){
 		return userMapper.update(user);
@@ -46,4 +43,18 @@ public class UserServiceImpl implements UserService {
 		userMapper.updateUserPassword(loginname, password);// TODO Auto-generated method stub
 		
 	}
+
+	@Override
+	public int addUser(User user) {
+		// TODO Auto-generated method stub
+		return userMapper.add(user);
+	}
+
+	@Override
+	public User findLoginname(Integer user_id) {
+		// TODO Auto-generated method stub
+		return userMapper.findWithLoginname(user_id);
+	}
+
+	
 }

@@ -2,10 +2,8 @@ package org.big.controller;
 
 import java.util.List;
 
-import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpSession;
 
-import org.big.domain.Cart;
 import org.big.domain.Goods;
 import org.big.service.GoodsService;
 import org.springframework.beans.factory.annotation.Autowired;

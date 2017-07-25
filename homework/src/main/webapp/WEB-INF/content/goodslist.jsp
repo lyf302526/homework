@@ -5,9 +5,7 @@
 <title>物品详情</title>
  <link href="css/bootstrap.min.css" rel="stylesheet">
  <link href="css/style.css" rel="stylesheet">
-
-
-<link href="css/css.css" type="text/css" rel="stylesheet">
+ <link href="css/css.css" type="text/css" rel="stylesheet">
 
     <script src="js/jquery.min.js"></script>
     <script src="js/bootstrap.min.js"></script>
@@ -19,8 +17,9 @@
 <div class="container-fluid">
 	<div class="row-fluid">
 		<div class="span12">
-			<h1 style="float:left";><font color="#FFCC33">精美饰品</font></h1>
-<div id=preview>
+			<h1 style="float:left";><font color="#FFCC33">精美饰品</font></h1><br>
+			<h3 ><font color="black">商品名称：${sessionScope.goods.goods_name }&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;商品价格：${sessionScope.goods.price }</font></h3>
+	<div id=preview>
 	<div class=jqzoom id=spec-n1 onClick="window.open('#')"><IMG height=350
 	src="img/${sessionScope.goods.image1 }" jqimg="img/${goods.image1 }" width=350>
 	</div>
@@ -102,38 +101,5 @@
 			
 		</div>
 	</div>
-
-
-
-    
-
-	
-	<div class="row-fluid">
-		<div class="span12">
-			<div class="tabbable" id="tabs-665433">
-				<ul class="nav nav-tabs">
-					<li class="active">
-						<a rel="nofollow" href="#panel-365037" data-toggle="tab">累计评价</a>
-					</li>
-					<li>
-						<a rel="nofollow" href="#panel-343705" data-toggle="tab">产品参数</a>
-					</li>
-				</ul>
-				<div class="tab-content">
-					<div class="tab-pane active" id="panel-365037">
-						<p>
-							累计评价
-						</p>
-					</div>
-					<div class="tab-pane" id="panel-343705">
-						<p>
-							产品参数
-						</p>
-					</div>
-				</div>
-			</div>
-		</div>
-	</div>
-
 </body>
 </html>

@@ -21,13 +21,12 @@ public interface UserMapper {
 	User findWithLoginnameAndPassword(@Param("loginname")String loginname,
 			@Param("password") String password);
 	@Insert("insert into tb_user(loginname,password,address,phone)values(#{loginname},#{password},#{address},#{phone})")
-	int save(User user);
+	int add(User user);
 	@Update("update tb_user set password=#{password} where loginname=#{loginname}")
 	int update(User user);
 	@Update("update tb_user set password=#{password} where loginname=#{loginname}")
 	void updateUserPassword(@Param("loginname")String loginname,
 			@Param("password") String password);
-	@Select("select * from tb_user where loginname = #{loginname} ")
-	User findWithLoginnameAndEmail(@Param("loginname")String loginname,
-			@Param("email") String email);
+	@Select("select * from tb_user where user_id = #{user_id} ")
+	User findWithLoginname(@Param("user_id")Integer user_id);
 }

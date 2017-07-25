@@ -16,5 +16,4 @@ public interface GoodsService {
 	Goods selectGoods(String goods_id);
 	int addGoods(Goods goods);
 	int deleteGoods(String goods_id);
-	//int addOrder(String goods_id);
 }

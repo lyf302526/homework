@@ -15,12 +15,19 @@
 </head>
 <div>
 <center>
+${sessionScope.user.loginname }的订单详情
 <h2>订单详情</h2>
 <h3>订单号：${sessionScope.order.id}</h3>
 <h3>商品名称：${sessionScope.order.goods_name}</h3>
 <h3>商品id：${sessionScope.order.goods_id}</h3>
 <h3>订单状态：${sessionScope.order.state}</h3>
 <a class="btn btn-primary" href="goodsForm" role="button">继续购物</a>
+<form action="evaluation" method="post" >
+	<input type="submit" value="评价">
+	<input type="hidden" id="goods_id" name="goods_id" value="${sessionScope.order.goods_id }">
+	<input type="hidden" id="user_id" name="user_id" value="${sessionScope.user.user_id }">
+	<input type="hidden" id="id" name="id" value="${sessionScope.order.id}">
+</form>
 </center>
 </div>
 </body>

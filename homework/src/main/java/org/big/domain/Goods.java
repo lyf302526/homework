@@ -2,8 +2,7 @@ package org.big.domain;
 
 import java.io.Serializable;
 
-public class Goods implements Serializable{
-	private Integer id;            //id
+public class Goods implements Serializable{        
 	private String goods_name;     //物品名
 	private String goods_id;
 	private String discriber;      //描述
@@ -19,12 +18,7 @@ public class Goods implements Serializable{
 		super();
 		// TODO Auto-generated constructor stub
 	}
-	public Integer getId() {
-		return id;
-	}
-	public void setId(Integer id) {
-		this.id = id;
-	}
+	
 	public void setGoods_id(String goods_id) {
 		this.goods_id = goods_id;
 	}
@@ -57,7 +51,7 @@ public class Goods implements Serializable{
 	}
 	@Override
 	public String toString() {
-		return "Goods[id="+id+",goods_name="+goods_name+",discriber="+discriber
+		return "Goods[goods_id="+goods_id+",goods_name="+goods_name+",discriber="+discriber
 				+",price="+price+",image1="+image1+",image2="+image2+",image3="
 				+image3+",image4="+image4+",image5="+image5+",count="+count+",sale="
 				+sale+"]";

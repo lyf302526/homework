@@ -20,12 +20,12 @@ public interface GoodsMapper {
 	@Select("select * from tb_goods")
 	List<Goods> findAll();
 	@Select("select * from tb_goods where goods_id=#{goods_id}")
-	  Goods selectGoods(@Param("goods_id")String goods_id);
+	  Goods selectGoods(@Param("goods_id")String  goods_id);
 	@Delete("delete from tb_goods where goods_id=#{goods_id}")
 	int delete(@Param("goods_id")String goods_id);
 	@Insert("insert into tb_goods(goods_id,goods_name,discriber,price,count,"
-			+ "image1) values(#{goods_id},#{goods_name},"
-			+ "#{discriber},#{price},#{count},#{image1})")
+			+ "image1,image2,image3,image4,image5) values(#{goods_id},#{goods_name},"
+			+ "#{discriber},#{price},#{count},#{image1},#{image2},#{image3},#{image4},#{image5})")
 	int add(Goods goods);
 	
 }

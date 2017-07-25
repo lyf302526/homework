@@ -42,7 +42,8 @@
 			<td>
 			<form action="doingorder" method="post" >
 			<input type="submit" value="发货">
-			<input type="hidden" id="good_id" name="good_id" value="${order.goods_id}">
+			<input type="hidden" id="goods_id" name="goods_id" value="${order.goods_id}">
+			<input type="hidden" id="user_id" name="user_id" value="${order.user_id}">
 			<input type="hidden" id="id" name="id" value="${order.id}">
 			</form>
 			</td>

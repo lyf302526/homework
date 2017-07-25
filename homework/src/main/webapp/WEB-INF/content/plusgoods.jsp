@@ -60,9 +60,37 @@
 				<div class="form-group">
 					 
 					<label for="exampleInputFile">
-						增加图片：
+						增加图片1：
 					</label>
 					<input type="file" id="image1" name="image1" >
+				</div>
+				<div class="form-group">
+					 
+					<label for="exampleInputFile">
+						增加图片2：
+					</label>
+					<input type="file" id="image2" name="image2" >
+				</div>
+				<div class="form-group">
+					 
+					<label for="exampleInputFile">
+						增加图片3：
+					</label>
+					<input type="file" id="image3" name="image3" >
+				</div>
+				<div class="form-group">
+					 
+					<label for="exampleInputFile">
+						增加图片4：
+					</label>
+					<input type="file" id="image4" name="image4" >
+				</div>
+				<div class="form-group">
+					 
+					<label for="exampleInputFile">
+						增加图片5：
+					</label>
+					<input type="file" id="image5" name="image5" >
 				</div>
 				<button type="submit" class="btn btn-default" id="addgoods" name="addgoods">
 					确定增加
