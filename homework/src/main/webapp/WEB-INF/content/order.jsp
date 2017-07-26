@@ -16,7 +16,7 @@
 </head>
 <body>
 <div>
-<font color="#FF5809"><h1>欢迎[${sessionScope.user.loginname }]查看订单</h1></font>
+<font color="#FF5809"><h1>欢迎商家${sessionScope.alogin.loginname }查看订单</h1></font>
 <table border="1">
 	<tr>
 		<th width="150px">序号</th><th width="150px">订单号</th><th>订单状态</th><th>查看详情</th><th>删除</th><th>发货</th>

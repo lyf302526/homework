@@ -58,7 +58,7 @@
 						<td><form action="addcollect" method="post">
 							<input type="hidden" id="goods_id" name="goods_id" value="${goods.goods_id }">
 							<input type="hidden" id="price" name="price" value="${goods.price }">
-							<input type="hidden" id="image1" name="image1" value="img/${goods.image1 }">
+							<input type="hidden" id="image1" name="image1" value="${goods.image1 }">
 							<input type="submit" style="background-color:#79FF79" value="收藏">
 							</form></td>
 					</tr>

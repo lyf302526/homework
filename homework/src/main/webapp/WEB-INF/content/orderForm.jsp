@@ -18,9 +18,11 @@
 <div>
 <font color="#FF5809"><h1>欢迎[${sessionScope.user.loginname }]查看订单</h1></font>
 <div>
-	<font size="5"><a href="cartForm" >我的购物车</a></font>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-    <font size="5"><a href="collectForm">我的收藏</a></font>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+	<font size="5"><a class="btn btn-primary" href="goodsForm" role="button">商品首页</a></font>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+	<font size="5"><a class="btn btn-primary" href="cartForm"	role="button" >我的购物车</a></font>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+    <font size="5"><a class="btn btn-primary" href="collectForm" role="button">我的收藏</a></font>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
 </div>
+<br>
 <table border="1">
 	<tr>
 		<th width="150px">序号</th><th width="150px">订单号</th><th>订单状态</th><th>查看详情</th><th>删除</th><th>发货</th>

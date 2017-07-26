@@ -37,8 +37,6 @@
 				<li><img src="img/${sessionScope.goods.image3 }"> </li>
 				<li><img src="img/${sessionScope.goods.image4 }"> </li>
 				<li><img src="img/${sessionScope.goods.image5 }"> </li>
-				
-				
 			</ul>
 		</div>
 		<div class=control id=spec-right>

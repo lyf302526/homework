@@ -115,14 +115,16 @@ public class OrderController {
 			// 正文
 			builder.append(
 					"<html><head><meta http-equiv=\"Content-Type\" content=\"text/html; charset=UTF-8\" /></head><body>");
-			url.append("<font color='red'>"+"亲爱的顾客：您在饰品小屋购买的商品已经发货，请您耐心等待收货！ "+ "</font>");
+			url.append("<font color='red'>" + "亲爱的顾客，您在饰品小屋购买的商品已经发货，请您耐心等待！" + "</font>");
 			builder.append("<br/><br/>");
 			builder.append("<div>" + url + "</div>");
+
 			builder.append("</body></html>");
 			SimpleEmail sendemail = new SimpleEmail();
 			sendemail.setHostName("smtp.126.com");// 指定要使用的邮件服务器
-			sendemail.setAuthentication("lyf1424944719@126.com", "liyanfang123");// 使用163的邮件服务器需提供在163已注册的用户名、密码
+			sendemail.setAuthentication("lyf1424944719@126.com", "liyanfang123");// 使用163的邮件服务器需提供在126已注册的用户名、密码
 			sendemail.setCharset("UTF-8");
+
 			try {
 				sendemail.setCharset("UTF-8");
 				sendemail.addTo(loginname);
@@ -135,11 +137,13 @@ public class OrderController {
 				catch (EmailException e) {
 				e.printStackTrace();
 				}	
-			
+			response.getWriter().println("你的订单通知已成功发送到邮箱");	
+
 		}
 		mv.setView(new RedirectView("./order"));
 	    return mv;
 	    
 	}
+	
 
 }

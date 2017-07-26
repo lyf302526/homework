@@ -16,7 +16,7 @@
     <link href="css/style.css" rel="stylesheet">
 </head>
 <body>
-欢迎[${sessionScope.user.loginname }]查看购物车
+<font color="#FF5809"><h3>欢迎[${sessionScope.user.loginname }]查看购物车</h3></font>
 <h1><a class="btn btn-primary" href="goodsForm" role="button">继续购物</a>
 <a class="btn btn-danger" href="clearcart" role="button">清空购物车</a></h1>
 <table class="table table-hover">
