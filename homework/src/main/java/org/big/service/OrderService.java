@@ -9,6 +9,7 @@ public interface OrderService {
 	int deleteorder(Order order);
 	List<Order> getAll();
 	Order selectOrder(int id);
+	Order selectOrders(int id);
 	void updateOrder(String state,int id);
 	
 }

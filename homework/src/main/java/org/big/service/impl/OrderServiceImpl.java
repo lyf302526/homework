@@ -54,5 +54,12 @@ public class OrderServiceImpl implements OrderService{
 		orderMapper.updateOrder(state, id);
 	}
 
+	@Override
+	public Order selectOrders(int id) {
+		// TODO Auto-generated method stub
+		Order order=orderMapper.selectOrders(id);
+		return order;
+	}
+
 	
 }

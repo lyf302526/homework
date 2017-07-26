@@ -20,6 +20,8 @@ public interface OrderMapper {
 	int add(Order order);
 	@Select("select * from tb_order where id=#{id}")
 	Order selectOrder(@Param("id") int id);
+	@Select("select * from tb_order where id=#{id}")
+	Order selectOrders(@Param("id") int id);
 	@Update("update tb_order set state=#{state} where id=#{id}")
 	int updateOrder(@Param("state") String state,@Param("id") int id);
 	@Update("update tb_goods set count=count-#{count},sale=sale+#{count} where goods_id=#{goods_id}")

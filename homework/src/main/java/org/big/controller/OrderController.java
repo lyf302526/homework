@@ -93,6 +93,18 @@ public class OrderController {
 		mv.setViewName("./showorderForm");
 		return mv;
 	}
+	
+	@RequestMapping(value="/selectorders")
+	 public ModelAndView selectorders(
+			 int id,
+			 ModelAndView mv,
+			 HttpSession session){
+		Order order=orderService.selectOrder(id);
+		session.setAttribute("order", order);
+		mv.setViewName("./showorder");
+		return mv;
+	}
+	
 	@RequestMapping(value="/doingorder",method = RequestMethod.POST)
 	public ModelAndView doingorder(@ModelAttribute Order order,
 			ModelAndView mv,

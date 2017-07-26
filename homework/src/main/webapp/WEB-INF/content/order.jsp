@@ -28,7 +28,7 @@
 			<td>${order.user_id}${order.goods_id}</td>
 			<td>${order.state }</td>
 			<td>
-			<form action="selectorder" method="post">
+			<form action="selectorders" method="post">
 			<input type="submit" value="查看详情">
 			<input type="hidden" id="id" name="id" value="${order.id}">
 			</form>
